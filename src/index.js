@@ -6,14 +6,9 @@ import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from "react-router-dom";
 
 
-
-const titles = ['Dessert (100g serving)', 'Calories', 'Fat (g)', 'Carbs (g)', 'Protein (g)'];
-const attributes = ['name', 'calories', 'fat', 'carbs', 'protein'];
-
 ReactDOM.render(
 	<BrowserRouter>
 		<App />
-		{/*<Table titles={titles} attributes={attributes}/>*/}
 	</BrowserRouter>,
 	document.getElementById('root')
 );

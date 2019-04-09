@@ -26,14 +26,6 @@ const Theaters = (props) => (
 	<div>
 		<h2>Theater Locations</h2>
 		{<Table titles={locations_titles} attributes={locations_attributes} data={props.data !== '' ? JSON.parse(props.data) : [{}]}/>}
-
-		<div>
-			<h3>Theaters</h3>
-			<ol>
-				{/*{props.data !== '' ? generateTheatersLinks({data: props.data}) : generateTheatersLinks({data: [{}]})}*/}
-				{props.data !== '' ? props.data.map((v, idx) => <li key={idx}><Link to="/">{v["theaterName"]}</Link></li>) : generateTheatersLinks({data: [{}]})}
-			</ol>
-		</div>
 	</div>
 );
 
